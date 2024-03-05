@@ -1,0 +1,25 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/evujici/Desktop/Personal-Projects/LZ77-DEFLATE-Compression/LZ77-DEFLATE-Compression/main'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _readFrequencies, symObjAddr: 0x0, symBinAddr: 0x100002E98, symSize: 0xE0 }
+  - { offsetInCU: 0xCA, offset: 0xCA, size: 0x8, addend: 0x0, symName: _readFrequencies, symObjAddr: 0x0, symBinAddr: 0x100002E98, symSize: 0xE0 }
+  - { offsetInCU: 0x134, offset: 0x134, size: 0x8, addend: 0x0, symName: _getCharacters, symObjAddr: 0xE0, symBinAddr: 0x100002F78, symSize: 0x138 }
+  - { offsetInCU: 0x1BE, offset: 0x1BE, size: 0x8, addend: 0x0, symName: _find_longest_match, symObjAddr: 0x218, symBinAddr: 0x1000030B0, symSize: 0x160 }
+  - { offsetInCU: 0x23A, offset: 0x23A, size: 0x8, addend: 0x0, symName: _write_compressed_output, symObjAddr: 0x378, symBinAddr: 0x100003210, symSize: 0xC4 }
+  - { offsetInCU: 0x26C, offset: 0x26C, size: 0x8, addend: 0x0, symName: _newNode, symObjAddr: 0x43C, symBinAddr: 0x1000032D4, symSize: 0x58 }
+  - { offsetInCU: 0x2B0, offset: 0x2B0, size: 0x8, addend: 0x0, symName: _createMinHeap, symObjAddr: 0x494, symBinAddr: 0x10000332C, symSize: 0x58 }
+  - { offsetInCU: 0x2E6, offset: 0x2E6, size: 0x8, addend: 0x0, symName: _swapMinHeapNode, symObjAddr: 0x4EC, symBinAddr: 0x100003384, symSize: 0x3C }
+  - { offsetInCU: 0x326, offset: 0x326, size: 0x8, addend: 0x0, symName: _minHeapify, symObjAddr: 0x528, symBinAddr: 0x1000033C0, symSize: 0x158 }
+  - { offsetInCU: 0x382, offset: 0x382, size: 0x8, addend: 0x0, symName: _isSizeOne, symObjAddr: 0x680, symBinAddr: 0x100003518, symSize: 0x24 }
+  - { offsetInCU: 0x3AA, offset: 0x3AA, size: 0x8, addend: 0x0, symName: _extractMin, symObjAddr: 0x6A4, symBinAddr: 0x10000353C, symSize: 0x70 }
+  - { offsetInCU: 0x3E0, offset: 0x3E0, size: 0x8, addend: 0x0, symName: _insertMinHeap, symObjAddr: 0x714, symBinAddr: 0x1000035AC, symSize: 0xEC }
+  - { offsetInCU: 0x420, offset: 0x420, size: 0x8, addend: 0x0, symName: _buildMinHeap, symObjAddr: 0x800, symBinAddr: 0x100003698, symSize: 0x78 }
+  - { offsetInCU: 0x460, offset: 0x460, size: 0x8, addend: 0x0, symName: _printArr, symObjAddr: 0x878, symBinAddr: 0x100003710, symSize: 0x84 }
+  - { offsetInCU: 0x4A0, offset: 0x4A0, size: 0x8, addend: 0x0, symName: _isLeaf, symObjAddr: 0x8FC, symBinAddr: 0x100003794, symSize: 0x50 }
+  - { offsetInCU: 0x4CA, offset: 0x4CA, size: 0x8, addend: 0x0, symName: _createAndBuildMinHeap, symObjAddr: 0x94C, symBinAddr: 0x1000037E4, symSize: 0xA8 }
+  - { offsetInCU: 0x53E, offset: 0x53E, size: 0x8, addend: 0x0, symName: _buildHuffmanTree, symObjAddr: 0x9F4, symBinAddr: 0x10000388C, symSize: 0xBC }
+  - { offsetInCU: 0x5C2, offset: 0x5C2, size: 0x8, addend: 0x0, symName: _printCodes, symObjAddr: 0xAB0, symBinAddr: 0x100003948, symSize: 0xF4 }
+  - { offsetInCU: 0x606, offset: 0x606, size: 0x8, addend: 0x0, symName: _HuffmanCodes, symObjAddr: 0xBA4, symBinAddr: 0x100003A3C, symSize: 0x88 }
+  - { offsetInCU: 0x677, offset: 0x677, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xC2C, symBinAddr: 0x100003AC4, symSize: 0x334 }
+...
