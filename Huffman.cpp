@@ -29,6 +29,17 @@ void printCodes(HuffmanNode *root, std::string str, std::unordered_map<char, std
     printCodes(root->right, str + "1", huffmanCode);
 }
 
+/**
+ * @brief Generates Huffman codes for the given data.
+ *
+ * This function takes a string of data and generates Huffman codes for each character in the data.
+ * Huffman coding is a lossless data compression algorithm that assigns variable-length codes to different characters
+ * based on their frequencies of occurrence in the input data. The generated Huffman codes can be used to compress
+ * the data by replacing each character with its corresponding Huffman code.
+ *
+ * @param data The input data for which Huffman codes need to be generated.
+ * @return A string containing the Huffman codes for each character in the input data.
+ */
 std::string HuffmanCodes(std::string data) {
     // Count frequency of each character
     std::unordered_map<char, unsigned> freq;
@@ -72,6 +83,17 @@ std::string HuffmanCodes(std::string data) {
     return encodedData;
 }
 
+/**
+ * @brief Decompresses the encoded data using the Huffman algorithm.
+ *
+ * This function takes in the encoded data and a pointer to the root of the Huffman tree.
+ * It performs the decompression process by traversing the Huffman tree based on the encoded data.
+ * The decompressed data is returned as a string.
+ *
+ * @param encodedData The encoded data to be decompressed.
+ * @param root Pointer to the root of the Huffman tree.
+ * @return The decompressed data as a string.
+ */
 std::string HuffmanDecompress(const std::string &encodedData, HuffmanNode *root)
 {
     std::string decodedData;
@@ -109,6 +131,15 @@ std::string encodeData(const std::string &data, const std::unordered_map<char, s
     return encodedData;
 }
 
+/**
+ * @brief Builds a Huffman tree based on the given data.
+ *
+ * This function takes a string of data and constructs a Huffman tree using the Huffman algorithm.
+ * The Huffman tree is used for data compression and decompression.
+ *
+ * @param data The input data for constructing the Huffman tree.
+ * @return A pointer to the root node of the constructed Huffman tree.
+ */
 HuffmanNode *buildHuffmanTree(std::string data)
 {
     // Count frequency of each character

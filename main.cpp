@@ -16,6 +16,12 @@ struct LZ77Token {
         : offset(offset), length(length), nextChar(nextChar) {}
 };
 
+/**
+ * @brief Compresses the given text using the LZ77 algorithm.
+ *
+ * @param text The input text to be compressed.
+ * @return A vector of LZ77Token representing the compressed text.
+ */
 std::vector<LZ77Token> lz77Compress(const std::string& text) {
     std::vector<LZ77Token> tokens;
     size_t i = 0;
@@ -79,6 +85,17 @@ std::vector<LZ77Token> parseTokensFromString(const std::string& tokenStr) {
     return tokens;
 }
 
+/**
+ * @brief Decompresses a sequence of LZ77 tokens and returns the decompressed string.
+ *
+ * This function takes a vector of LZ77 tokens as input and performs the decompression
+ * process to reconstruct the original string. The LZ77 algorithm is a lossless data
+ * compression algorithm that replaces repeated occurrences of data with references to
+ * a dictionary window.
+ *
+ * @param tokens The vector of LZ77 tokens representing the compressed data.
+ * @return The decompressed string.
+ */
 std::string lz77Decompress(const std::vector<LZ77Token>& tokens) {
     std::string decompressedText;
     for (const LZ77Token& token : tokens) {
