@@ -9,7 +9,6 @@ public:
     char data;
     unsigned freq;
     HuffmanNode *left, *right;
-
     HuffmanNode(char data, unsigned freq);
 };
 
@@ -18,8 +17,11 @@ struct compare {
 };
 
 void printCodes(HuffmanNode* root, std::string str, std::unordered_map<char, std::string>& huffmanCode);
-void HuffmanCodes(std::string data);
-void HuffmanDecompress(const std::string& encodedData, HuffmanNode* root);
+std::string HuffmanCodes(std::string data);
+HuffmanNode* buildHuffmanTree(std::string data);
+std::string HuffmanDecompress(const std::string& encodedData, HuffmanNode* root);
+std::string encodeData(const std::string& data, const std::unordered_map<char, std::string>& huffmanCode);
+
 
 
 #endif // HUFFMAN_H
