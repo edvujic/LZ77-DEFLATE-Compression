@@ -1,4 +1,4 @@
-# LZ77 Compression and Decompression
+# DEFLATE Compression and Decompression
 
 This repository contains an implementation of the LZ77 compression and decompression algorithm in C++. LZ77 is a lossless data compression algorithm that forms the basis for several file compression formats, including DEFLATE, which is used in ZIP and GZIP file formats.
 
